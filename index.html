@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دادیار | مشاوره و خدمات حقوقی آنلاین</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--tx:#1b2433;--mu:#667085;--pr:#b08a3e;--pr2:#1f2f4d;--bd:#e7e2d6;--sh:0 10px 30px rgba(31,47,77,.10);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--card:#17213a;--tx:#eef1f7;--mu:#9aa6bd;--pr:#d4ae5f;--pr2:#2b4272;--bd:#26324d;--sh:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#0f1624;--card:#17213a;--tx:#eef1f7;--mu:#9aa6bd;--pr:#d4ae5f;--pr2:#2b4272;--bd:#26324d;--sh:0 10px 30px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9;transition:background .3s,color .3s;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.logo{font-weight:800;font-size:1.4rem;display:flex;align-items:center;gap:8px}
+.logo b{color:var(--pr)}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav a{color:var(--mu);font-weight:600;transition:.2s}nav a:hover{color:var(--pr)}
+.act{display:flex;gap:8px;align-items:center}
+.ib{width:42px;height:42px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;display:grid;place-items:center;transition:.2s}
+.ib:hover{border-color:var(--pr);transform:translateY(-2px)}
+.btn{display:inline-block;padding:11px 24px;border-radius:12px;background:var(--pr);color:#fff;font-weight:700;border:0;cursor:pointer;font-family:inherit;transition:.25s;box-shadow:0 8px 20px rgba(176,138,62,.35)}
+.btn:hover{transform:translateY(-3px)}
+.btn.o{background:transparent;color:var(--tx);border:1px solid var(--bd);box-shadow:none}
+#bg{display:none}
+@media(max-width:860px){#bg{display:grid}.hide{display:none}
+nav{position:fixed;inset:68px 0 auto 0;background:var(--card);border-bottom:1px solid var(--bd);max-height:0;overflow:hidden;transition:max-height .35s}
+nav.open{max-height:360px}nav ul{flex-direction:column;padding:16px 24px;gap:12px}}
+.hero{position:relative;padding:70px 0 90px;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.tag{display:inline-block;padding:4px 16px;border-radius:99px;background:color-mix(in srgb,var(--pr) 15%,transparent);color:var(--pr);font-weight:600;font-size:.9rem}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.4;margin:14px 0;font-weight:800}
+h1 span{color:var(--pr)}
+.hero p{color:var(--mu);max-width:520px}
+.search{display:flex;gap:8px;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:8px;margin:26px 0 16px;box-shadow:var(--sh);flex-wrap:wrap}
+.search input,.search select{flex:1;min-width:120px;border:0;background:transparent;color:var(--tx);font-family:inherit;padding:10px 12px;outline:0;font-size:1rem}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;animation:fl 9s ease-in-out infinite}
+.b1{width:300px;height:300px;background:var(--pr);top:-60px;left:-60px}
+.b2{width:260px;height:260px;background:var(--pr2);bottom:-40px;right:30%;animation-delay:-4s}
+@keyframes fl{50%{transform:translate(30px,40px) scale(1.1)}}
+.art{position:relative;animation:fl2 6s ease-in-out infinite}
+@keyframes fl2{50%{transform:translateY(-14px)}}
+.art svg{width:100%;height:auto;filter:drop-shadow(0 25px 35px rgba(0,0,0,.25))}
+.chip{position:absolute;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:8px 14px;box-shadow:var(--sh);font-size:.85rem;font-weight:600}
+.c1{top:8%;right:-4%}.c2{bottom:10%;left:-4%}
+section{padding:70px 0}
+.st{text-align:center;margin-bottom:40px}.st h2{font-size:1.9rem;font-weight:800}.st p{color:var(--mu)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:24px;transition:.3s;box-shadow:var(--sh)}
+.card:hover{transform:translateY(-8px);border-color:var(--pr)}
+.ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;background:color-mix(in srgb,var(--pr) 16%,transparent);margin-bottom:12px}
+.card h3{font-size:1.1rem}.card p{color:var(--mu);font-size:.93rem}
+.lw{text-align:center}
+.av{width:96px;height:96px;border-radius:50%;margin:0 auto 10px;border:3px solid var(--pr);overflow:hidden}
+.av svg{width:100%;height:100%}
+.meta{display:flex;justify-content:center;gap:12px;color:var(--mu);font-size:.85rem;margin:6px 0 12px;flex-wrap:wrap}
+.pr{font-weight:800;color:var(--pr)}
+.steps .n{width:46px;height:46px;border-radius:50%;background:var(--pr2);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:10px}
+.stats{background:var(--pr2);color:#fff;border-radius:28px;padding:44px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center}
+.stats b{font-size:2.2rem;display:block;color:#f1d58f}
+.cta{background:linear-gradient(135deg,var(--pr),#7d5d1f);color:#fff;border-radius:28px;padding:50px 24px;text-align:center}
+.cta .btn{background:#fff;color:#7d5d1f;margin:6px}
+footer{background:var(--card);border-top:1px solid var(--bd);padding:50px 0 24px;margin-top:40px}
+.fg{display:grid;gap:30px;grid-template-columns:1.5fr 1fr 1fr 1fr}
+footer h4{margin-bottom:10px}footer li{list-style:none;color:var(--mu);margin:4px 0}footer ul{padding:0}footer li a:hover{color:var(--pr)}
+.cp{text-align:center;color:var(--mu);font-size:.85rem;margin-top:30px;border-top:1px solid var(--bd);padding-top:16px}
+.rv{opacity:0;transform:translateY(30px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.chip{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="#top"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--pr)" stroke-width="2"><path d="M12 3v18M5 21h14M4 8l4 8H0zM20 8l4 8h-8zM4 8h16"/></svg>داد<b>یار</b></a>
+<nav id="nv"><ul><li><a href="#lawyers">وکلا</a></li><li><a href="#services">خدمات</a></li><li><a href="#how">نحوه کار</a></li><li><a href="#join">عضویت وکلا</a></li><li><a href="#contact">پشتیبانی</a></li></ul></nav>
+<div class="act">
+<button class="ib" id="th" aria-label="تغییر پوسته">🌙</button>
+<button class="ib" aria-label="سبد خرید"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 002 1.6h9.7a2 2 0 002-1.6L23 6H6"/></svg></button>
+<a class="btn hide" href="#join">ورود / ثبت‌نام</a>
+<button class="ib" id="bg" aria-label="منو">☰</button>
+</div></div></header>
+
+<main id="top">
+<div class="hero"><div class="blob b1"></div><div class="blob b2"></div>
+<div class="w"><div>
+<span class="tag">⚖️ بیش از ۲,۵۰۰ وکیل پایه یک دادگستری</span>
+<h1>مشاوره حقوقی <span>مطمئن</span>، در چند دقیقه</h1>
+<p>وکیل مناسب پرونده خود را بر اساس تخصص، رزومه و امتیاز کاربران انتخاب کنید؛ تلفنی، چت یا حضوری مشاوره بگیرید و با پرداخت امن، پرونده را به متخصص بسپارید.</p>
+<div class="search"><input placeholder="موضوع یا نام وکیل..."><select><option>همه تخصص‌ها</option><option>ملکی</option><option>خانواده</option><option>کیفری</option><option>شرکت‌ها</option></select><button class="btn">جستجو</button></div>
+<small style="color:var(--mu)">✔ پرداخت امن &nbsp; ✔ محرمانگی کامل &nbsp; ✔ پشتیبانی ۲۴ ساعته</small>
+</div>
+<div class="art">
+<svg viewBox="0 0 420 380" fill="none"><rect x="20" y="40" width="380" height="310" rx="30" fill="var(--pr2)"/>
+<rect x="50" y="70" width="320" height="250" rx="20" fill="#2f4570" opacity=".6"/>
+<g stroke="#f1d58f" stroke-width="7" stroke-linecap="round"><path d="M210 100v170M150 290h120M120 140h180"/><path d="M120 140l-40 80h80zM300 140l-40 80h80z" fill="#f1d58f" fill-opacity=".25"/></g>
+<circle cx="210" cy="96" r="12" fill="#f1d58f"/><path d="M80 220a40 18 0 0080 0M260 220a40 18 0 0080 0" stroke="#f1d58f" stroke-width="6"/>
+<rect x="150" y="296" width="120" height="14" rx="7" fill="#f1d58f"/></svg>
+<div class="chip c1">⭐ ۴.۹ از ۱۲,۰۰۰ نظر</div><div class="chip c2">🔒 پرداخت امن امانی</div></div>
+</div></div>
+
+<section id="services"><div class="w">
+<div class="st rv"><h2>خدمات حقوقی</h2><p>پوشش کامل زمینه‌های حقوقی برای افراد و کسب‌وکارها</p></div>
+<div class="grid">
+<div class="card rv"><div class="ic">🏠</div><h3>املاک و ثبت</h3><p>قراردادها، سند، تخلیه و دعاوی ملکی.</p></div>
+<div class="card rv"><div class="ic">👨‍👩‍👧</div><h3>خانواده</h3><p>طلاق، مهریه، حضانت و نفقه.</p></div>
+<div class="card rv"><div class="ic">🏛️</div><h3>کیفری</h3><p>شکایت، دفاع و پیگیری پرونده‌های کیفری.</p></div>
+<div class="card rv"><div class="ic">💼</div><h3>شرکت‌ها و تجاری</h3><p>ثبت شرکت، قرارداد و حل اختلاف تجاری.</p></div>
+<div class="card rv"><div class="ic">📜</div><h3>تنظیم قرارداد</h3><p>بررسی و تنظیم انواع لایحه و قرارداد.</p></div>
+<div class="card rv"><div class="ic">🌍</div><h3>بین‌الملل</h3><p>اقامت، ثبت برند و دعاوی فرامرزی.</p></div>
+</div></div></section>
+
+<section id="lawyers" style="background:color-mix(in srgb,var(--pr) 6%,transparent)"><div class="w">
+<div class="st rv"><h2>وکلای برتر</h2><p>با رزومه و امتیاز واقعی کاربران</p></div>
+<div class="grid" id="lg"></div>
+</div></section>
+
+<section id="how"><div class="w">
+<div class="st rv"><h2>چگونه کار می‌کند؟</h2></div>
+<div class="grid steps">
+<div class="card rv"><div class="n">۱</div><h3>جستجو و انتخاب</h3><p>وکیل را بر اساس تخصص، شهر و هزینه پیدا کنید.</p></div>
+<div class="card rv"><div class="n">۲</div><h3>رزرو و پرداخت امن</h3><p>مبلغ تا پایان خدمت نزد سایت امانت می‌ماند.</p></div>
+<div class="card rv"><div class="n">۳</div><h3>دریافت مشاوره</h3><p>تلفنی، چت یا حضوری با وکیل صحبت کنید.</p></div>
+<div class="card rv"><div class="n">۴</div><h3>امتیاز و پیگیری</h3><p>تجربه خود را ثبت کنید؛ پشتیبانی همراه شماست.</p></div>
+</div></div></section>
+
+<section><div class="w"><div class="stats rv">
+<div><b data-n="2500">0</b>وکیل فعال</div><div><b data-n="48000">0</b>مشاوره موفق</div><div><b data-n="31">0</b>شهر</div><div><b data-n="98">0</b>٪ رضایت</div>
+</div></div></section>
+
+<section id="join"><div class="w"><div class="cta rv">
+<h2>وکیل هستید؟ همین امروز درآمد خود را افزایش دهید</h2>
+<p style="max-width:620px;margin:10px auto 20px">پروفایل بسازید، خدمات و تعرفه خود را تعیین کنید، رزرو بگیرید و هزینه را مستقیم به کیف پول خود واریز کنید.</p>
+<a class="btn" href="#contact">ثبت‌نام وکلا</a><a class="btn" href="#contact">ورود کاربران</a>
+</div></div></section>
+</main>
+
+<footer id="contact"><div class="w"><div class="fg">
+<div><div class="logo">داد<b>یار</b></div><p style="color:var(--mu)">بستر مشاوره و خدمات حقوقی آنلاین؛ اتصال امن مردم به وکلای معتبر.</p></div>
+<div><h4>دسترسی سریع</h4><ul><li><a href="#lawyers">وکلا</a></li><li><a href="#services">خدمات</a></li><li><a href="#how">نحوه کار</a></li><li><a href="#join">عضویت وکلا</a></li></ul></div>
+<div><h4>پشتیبانی</h4><ul><li>سوالات متداول</li><li>قوانین و مقررات</li><li>حریم خصوصی</li><li>پیگیری تیکت</li></ul></div>
+<div><h4>تماس</h4><ul><li>📞 ۰۲۱-۰۰۰۰۰۰۰۰</li><li>✉️ support@example.ir</li><li>🕒 همه روزه، ۲۴ ساعته</li></ul></div>
+</div><div class="cp">© ۱۴۰۵ دادیار — نسخه نمایشی</div></div></footer>
+
+<script>
+var R=document.documentElement;
+function sv(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function ld(k){try{return localStorage.getItem(k)}catch(e){return null}}
+var t=ld('th');if(t){R.dataset.theme=t}
+function cur(){return R.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}
+var th=document.getElementById('th');
+function ui(){th.textContent=cur()==='dark'?'☀️':'🌙'}ui();
+th.onclick=function(){var n=cur()==='dark'?'light':'dark';R.dataset.theme=n;sv('th',n);ui()};
+var nv=document.getElementById('nv');
+document.getElementById('bg').onclick=function(){nv.classList.toggle('open')};
+nv.onclick=function(e){if(e.target.tagName==='A')nv.classList.remove('open')};
+var L=[["دکتر سارا احمدی","ملکی و ثبتی","تهران","۴.۹","۱۸","۴۵۰,۰۰۰","#c98a6b","#2b2118"],
+["علیرضا کریمی","کیفری","اصفهان","۴.۸","۱۲","۳۸۰,۰۰۰","#d9a98a","#1a1a1a"],
+["مریم رضوی","خانواده","شیراز","۵.۰","۱۵","۳۵۰,۰۰۰","#e0b394","#3a2416"],
+["دکتر پیمان نوری","شرکت‌ها و تجاری","مشهد","۴.۷","۲۰","۶۰۰,۰۰۰","#b97d5a","#101010"]];
+document.getElementById('lg').innerHTML=L.map(function(l,i){
+var hair=i%2?'<path d="M26 44a24 24 0 0148 0c-6-8-14-10-24-10s-18 2-24 10z" fill="'+l[7]+'"/>':'<path d="M22 50c0-30 12-34 28-34s28 4 28 34c-4-14-12-20-28-20S26 36 22 50z" fill="'+l[7]+'"/>';
+return '<div class="card lw rv"><div class="av"><svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#cfd8e8"/><path d="M10 100c4-22 20-30 40-30s36 8 40 30z" fill="#1f2f4d"/><path d="M42 70l8 14 8-14z" fill="#fff"/><circle cx="50" cy="46" r="20" fill="'+l[6]+'"/>'+hair+'<circle cx="43" cy="48" r="2" fill="#222"/><circle cx="57" cy="48" r="2" fill="#222"/><path d="M44 57q6 5 12 0" stroke="#7a3d2a" stroke-width="2" fill="none"/></svg></div><h3>'+l[0]+'</h3><div style="color:var(--pr);font-weight:600">'+l[1]+'</div><div class="meta"><span>📍 '+l[2]+'</span><span>⭐ '+l[3]+'</span><span>'+l[4]+' سال سابقه</span></div><div class="pr">'+l[5]+' تومان / مشاوره</div><br><a class="btn o" href="#contact">رزرو وقت</a></div>'}).join('');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);var n=e.target.querySelectorAll('[data-n]');n.forEach(cn)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(x){io.observe(x)});
+function cn(el){var T=+el.dataset.n,s=0,st=Math.ceil(T/60);var iv=setInterval(function(){s=Math.min(T,s+st);el.textContent=s.toLocaleString('fa-IR');if(s>=T)clearInterval(iv)},25)}
+</script>
+</body>
+</html>
